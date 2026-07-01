@@ -3,3 +3,4 @@ uploads/
 screenshots/
 node_modules/
 *.log
+.vercel
