@@ -4,7 +4,3 @@ screenshots/
 node_modules/
 *.log
 .vercel
-/.next
-package-lock.json
-.env
-.env.local

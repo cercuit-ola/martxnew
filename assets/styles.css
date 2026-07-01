@@ -1,0 +1,28 @@
+/* Extracted shared styles (condensed for static pages) */
+:root{--bg:#F4F4F7;--surface:#FFFFFF;--surface-2:#F2F2F5;--ink:#16161C;--ink-2:#54545E;--muted:#8B8B95;--border:#ECECEF;--line:#E5E5EA;--brand:#FF5A1F;--grad:linear-gradient(118deg,#FF6A2B,#FF2E7E)}
+*{box-sizing:border-box}
+html,body{margin:0;font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;min-height:100%;background:var(--bg);color:var(--ink)}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+.container{max-width:1280px;margin:0 auto;padding:24px 20px}
+.topnav{position:sticky;top:0;background:rgba(244,244,247,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:90}
+.topnav .inner{display:flex;align-items:center;gap:16px;padding:10px 20px;height:66px}
+.brand img{height:38px}
+.nav-links{display:flex;gap:10px;margin-left:12px}
+.nav-links a{padding:8px 12px;border-radius:10px;font-weight:600;color:var(--ink-2)}
+.hamburger{display:none;border-radius:12px;border:1px solid var(--border);width:44px;height:44px;background:#fff}
+.top-actions{margin-left:auto;display:flex;gap:10px;align-items:center}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:40px 20px}
+.hero h1{font-weight:800;font-size:42px;line-height:1}
+.hero p{color:#C9C2C6;max-width:560px}
+.primary{background:var(--grad);color:#fff;padding:14px 20px;border-radius:14px;border:none;font-weight:800}
+.secondary{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:#fff;padding:14px 20px;border-radius:14px}
+.card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.live-card,.product-card{border-radius:18px;border:1px solid var(--border);overflow:hidden;background:#fff;min-height:260px}
+.product-image{min-height:220px;background-size:cover;background-position:center}
+.product-info{padding:12px;background:var(--surface)}
+.section-header{display:flex;justify-content:space-between;align-items:end;margin-bottom:14px}
+.footer{margin-top:56px;padding:32px 20px;background:var(--surface);border-top:1px solid var(--border)}
+.footer .inner{display:flex;justify-content:space-between;align-items:center}
+@media(max-width:1000px){.hero{grid-template-columns:1fr}.card-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.nav-links{display:none}.hamburger{display:inline-flex}.card-grid{grid-template-columns:1fr}}

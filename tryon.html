@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MartX — AI Try-On</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header class="topnav"><div class="inner container"><div class="brand"><img src="assets/martx-wordmark.png" alt="MartX"></div><nav class="nav-links"><a href="/index.html">Home</a><a href="/marketplace.html">Marketplace</a><a href="/tryon.html">AI Try-On</a></nav></div></header>
+
+  <main class="container">
+    <h2>See it on you before you buy</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start;padding-top:18px;">
+      <div style="border-radius:20px;border:1px solid var(--border);background:var(--surface);padding:18px;">
+        <label style="display:block;font-weight:800;margin-bottom:8px">Garment image URL</label>
+        <input placeholder="https://example.com/garment.png" style="width:100%;padding:12px;border-radius:12px;border:1px solid var(--line);" />
+        <label style="display:block;font-weight:800;margin-top:12px">Prompt</label>
+        <textarea style="width:100%;height:140px;padding:12px;border-radius:12px;border:1px solid var(--line);">Show these gold hoop earrings on me with clean studio lighting</textarea>
+        <div style="margin-top:12px"><button class="primary">Generate try-on</button></div>
+      </div>
+      <div style="border-radius:20px;border:1px solid var(--border);background:var(--surface);padding:18px;">
+        <div style="background:#000;height:320px;border-radius:14px;">&nbsp;</div>
+        <div style="margin-top:12px;color:var(--muted)">Preview will appear here after generation.</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="inner container"><div>© MartX</div><div><a href="/index.html">Home</a></div></div></footer>
+</body>
+</html>
